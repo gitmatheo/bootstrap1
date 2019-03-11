@@ -55,7 +55,7 @@
     </nav>
 
     <!-- HOME SECTION -->
-    <header class="home" id="home-section">
+    <header class="home">
       <div class="dark-overlay">
         <div class="home-inner container">
           <div class="row">
@@ -150,7 +150,7 @@
       </div>
     </header>
     <!-- EXPLORE HEAD -->
-    <section class="explore-head">
+    <section class="explore-head" id="explore-head-section">
       <div class="container">
         <div class="row">
           <div class="col text-center py-5">
@@ -208,7 +208,7 @@
       </div>
     </section>
     <!-- CREATE HEAD -->
-    <section class="create-head bg-primary">
+    <section class="create-head bg-primary" id="create-head-section">
       <div class="container">
         <div class="row">
           <div class="col text-center py-5">
@@ -266,7 +266,7 @@
       </div>
     </section>
     <!-- SHARE HEAD -->
-    <section class="share-head bg-primary">
+    <section class="share-head bg-primary" id="share-head-section">
       <div class="container">
         <div class="row">
           <div class="col text-center py-5">
@@ -395,6 +395,27 @@
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      //Init Scrollspy
+      $("body").scrollspy({ target: "#main-nav" });
+
+      //Init Scrolling
+      $("#main-nav a").on("click", function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function() {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
     </script>
   </body>
 </html>
