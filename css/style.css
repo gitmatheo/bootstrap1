@@ -1,8 +1,16 @@
-.tick, .home .fas, .create .fas {
-  color: #008ed6;
-  background: #fff;
+.tick, .home .fas, .explore .fas, .create .fas, .share .fas {
   padding: 5px;
   border-radius: 5px;
+}
+
+.tick--primary, .home .fas, .create .fas {
+  color: #008ed6;
+  background: #fff;
+}
+
+.tick--secondary, .explore .fas, .share .fas {
+  background: #333;
+  color: #fff;
 }
 
 body {
@@ -38,12 +46,5 @@ body {
 
 .home .card-form {
   opacity: 0.8;
-}
-
-.explore .fas {
-  background: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

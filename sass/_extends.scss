@@ -1,6 +1,12 @@
 .tick {
-  color: #008ed6;
-  background: #fff;
   padding: 5px;
   border-radius: 5px;
+  &--primary {
+    color: #008ed6;
+    background: #fff;
+  }
+  &--secondary {
+    background: #333;
+    color: #fff;
+  }
 }

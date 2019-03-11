@@ -1,5 +1,6 @@
 .create {
   .fas {
     @extend .tick;
+    @extend .tick--primary;
   }
 }
