@@ -1,3 +1,10 @@
+.tick, .home .fas, .create .fas {
+  color: #008ed6;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 body {
   background: #333;
   color: #fff;
@@ -31,13 +38,6 @@ body {
 
 .home .card-form {
   opacity: 0.8;
-}
-
-.home .fas {
-  color: #008ed6;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
 }
 
 .explore .fas {
